@@ -37,8 +37,27 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    gap: 2rem;
 }
 
+.left label {
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+
+.left input {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    margin-top: 10px;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 .buttons {
     display: grid;
@@ -52,4 +71,12 @@ body {
     border: none;
     color: white;
     font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
