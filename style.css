@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .left label {
@@ -45,9 +45,13 @@ body {
     font-weight: bold;
 }
 
+.bill {
+    margin-bottom: 1rem;
+}
+
 .left input {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 80%;
     border-radius: 20px;
     border: none;
     background-color: hsl(189, 41%, 97%);
@@ -79,4 +83,35 @@ body {
 button:active {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.tipamount, .totalamount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tipnumber, .totalnumber {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(172, 67%, 45%);
+}
+
+.top {
+    color: white;
+}
+
+.bottom {
+    color: hsl(184, 14%, 56%);
+    margin-top: -10px;
+}
+
+.reset {
+    margin-top: auto;
 }
