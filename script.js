@@ -38,3 +38,9 @@ document.querySelector('#six').addEventListener('click', () => {
     custom = prompt('What percent tip?')
     calculateTip(custom)
 })
+
+document.querySelector('.reset').addEventListener('click', () => {
+    document.querySelector('.billAmount').value = 0
+    document.querySelector('.partySize').value = 1
+    calculateTip(0)
+})
